@@ -21,8 +21,8 @@ form {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  position: absolute;
-  bottom: 4px;
+  position: fixed;
+  bottom: 10px;
 }
 
 #textbox {
