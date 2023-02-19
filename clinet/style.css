@@ -56,7 +56,6 @@ form>button>i:hover {
   transform: scale(1.2);
 }
 
-
 /* js html style */
 #chat_container {
   display: flex;
@@ -68,6 +67,10 @@ form>button>i:hover {
   /* IE and Edge */
   scrollbar-width: none;
   /* Firefox */
+  position: relative;
+  /* top: 53px; */
+  /* margin-bottom: 55px; */
+  bottom: 55px;
 }
 
 #chat_container::-webkit-scrollbar {

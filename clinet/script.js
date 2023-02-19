@@ -5,7 +5,9 @@ const chatContainer = document.querySelector("#chat_container");
 const btn = document.querySelector("#subbtn");
 const textbox = document.querySelector("#textbox");
 const info = document.querySelector(".info")
-let loadingAnimation;// define a function that sets min-height of my-element to window.innerHeight:
+let loadingAnimation;
+
+// define a function that sets min-height of my-element to window.innerHeight:
 
 const setHeight = () => {
     document.getElementById("app").style.minHeight = window.innerHeight + "px"
