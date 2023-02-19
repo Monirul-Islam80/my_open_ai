@@ -6,6 +6,9 @@ const btn = document.querySelector("#subbtn");
 const textbox = document.querySelector("#textbox");
 const info = document.querySelector(".info")
 let loadingAnimation;
+const app = document.querySelector("#app");
+const loading_screen = document.querySelector(".loading_screen");
+
 
 // define a function that sets min-height of my-element to window.innerHeight:
 
@@ -127,3 +130,7 @@ form.addEventListener("keyup", (e) => {
         handleSubmit(e);
     }
 })
+setTimeout(() => {
+    app.style.display = "flex";
+    loading_screen.style.display = "none";
+}, 7000);

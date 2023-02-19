@@ -1,11 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
+<!-- 
+
+  |\    /|       /\    |\     |   _______  |-----_
+  | \  / |      /  \   | \    |      |     |     |
+  |  \/  |     /    \  |  \   |      |     |_____|
+  |      |     \    /  |   \  |      |     |  \
+  |      |      \  /   |    \ |      |     |   \
+  |      |       \/    |     \|   ___|___  |    \
+-->
 
 <head>
   <meta charset="UTF-8" />
-  <link rel="apple-touch-icon" sizes="180x180" href="./public/apple-touch-icon.png">
+  <link rel="icon" type="image/svg+xml"
+    href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%22256%22 height=%22256%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 rx=%2220%22 fill=%22%23003e48%22></rect><path d=%22M20.62 75.33L1.72 75.33L1.72 70.56L8.56 70.56L8.56 29.43L1.72 29.43L1.72 24.66L18.91 24.66L35.47 60.21L51.22 24.66L68.68 24.66L68.68 29.43L61.84 29.43L61.84 70.56L68.68 70.56L68.68 75.33L48.24 75.33L48.24 70.56L54.81 70.56L54.81 30.69L35.73 72.72L33.40 72.72L14.05 30.69L14.05 70.56L20.62 70.56L20.62 75.33ZM98.28 75.33L76.78 75.33L76.78 70.56L83.80 70.56L83.80 29.43L76.78 29.43L76.78 24.66L98.28 24.66L98.28 29.43L91.18 29.43L91.18 70.56L98.28 70.56L98.28 75.33Z%22 fill=%22%2300fff3%22></path></svg>" />
+  <!-- <link rel="apple-touch-icon" sizes="180x180" href="./public/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="./public/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="./public/favicon-16x16.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./public/favicon-16x16.png"> -->
   <link rel="manifest" href="./public/site.webmanifest">
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>My open AI</title>
@@ -25,6 +36,9 @@
 </head>
 
 <body>
+  <div class="loading_screen">
+    <img src="./public/images/loading-loader.gif" alt="loading screen" width="20%">
+  </div>
   <div id="app">
 
 
@@ -42,7 +56,7 @@
     <div id="chat_container"></div>
     <form>
       <textarea name="chat" id="textbox" cols="1" rows="1" placeholder="Ask anything....." required></textarea>
-      <button type="submit" id="subbtn"><i class="fa-regular fa-paper-plane"></i></button>
+      <button type="submit" id="subbtn"><i class="fa-regular fa-circle-question"></i></button>
     </form>
   </div>
   <script type="module" src="script.js"></script>

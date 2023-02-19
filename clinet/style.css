@@ -8,7 +8,7 @@
   width: 100vw;
   height: 100vh;
   background: linear-gradient(rgb(25, 31, 42), rgb(0, 28, 80));
-  display: flex;
+  display: none;
   align-items: center;
   flex-direction: column;
   justify-content: end;
@@ -71,6 +71,7 @@ form>button>i:hover {
   /* top: 53px; */
   /* margin-bottom: 55px; */
   bottom: 55px;
+  scroll-behavior: smooth;
 }
 
 #chat_container::-webkit-scrollbar {
@@ -92,6 +93,7 @@ form>button>i:hover {
   padding: 7px;
   border-radius: 50%;
   background-color: rgba(128, 128, 128, 0.407);
+  width: fit-content;
 }
 
 
@@ -140,8 +142,27 @@ form>button>i:hover {
   width: fit-content;
 }
 
+.loading_screen {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #1c263c;
+
+}
+
 @media screen and (max-width:512px) {
   .info {
     font-size: medium;
   }
+
+  #chat_container {
+    font-size: medium;
+  }
+
+  .loading_screen>img {
+    width: 37% !important;
+  }
+
 }
