@@ -2,8 +2,21 @@ import bot from "./public/images/bot.svg"
 import user from "./public/images/user.svg"
 const form = document.querySelector("form");
 const chatContainer = document.querySelector("#chat_container");
-
+const btn = document.querySelector("#subbtn");
+const textbox = document.querySelector("#textbox");
+const info = document.querySelector(".info")
 let loadingAnimation;
+btn.addEventListener("click", () => info.style.display = "none");
+textbox.addEventListener("keypress", (e) => {
+    if (event.keyCode == 13 && textbox.value == '') {
+        Event.preventDefault();
+        console.log(event.value);
+    } else {
+        info.style.display = "none"
+    }
+
+
+});
 
 const loading = element => {
     element.textContent = "";
@@ -76,9 +89,7 @@ const handleSubmit = async (e) => {
     mesDiv.innerHTML = "";
     if (response.ok) {
         const data = await response.json();
-        console.log(data.bot);
         const pdata = data.bot.trim();
-        console.log(pdata);
         typetext(mesDiv, pdata);
 
     } else {

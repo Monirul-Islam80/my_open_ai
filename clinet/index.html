@@ -26,10 +26,23 @@
 
 <body>
   <div id="app">
+
+
+    <div class="info">
+      <p> Ask anything related to programing and coding.</p>
+      <p class="ex">Ex: Write a program that reverse a
+        string
+        with c, c++,
+        python, JavaScript.</p>
+
+      <!-- This website is developed by<a href=""> Monirul Islam Soumik </a> with open source api <a
+        href="https://beta.openai.com/">OpenAI</a>. -->
+
+    </div>
     <div id="chat_container"></div>
     <form>
-      <textarea name="chat" id="textbox" cols="1" rows="1" placeholder="Ask anything.........."></textarea>
-      <button type="submit"><i class="fa-regular fa-paper-plane"></i></button>
+      <textarea name="chat" id="textbox" cols="1" rows="1" placeholder="Ask anything....." required></textarea>
+      <button type="submit" id="subbtn"><i class="fa-regular fa-paper-plane"></i></button>
     </form>
   </div>
   <script type="module" src="script.js"></script>
